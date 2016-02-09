@@ -1,0 +1,71 @@
+---
+"$schema": http://json-schema.org/draft-04/hyper-schema
+title: Monthly_billing
+description: Epsilon monthly charge billings
+stability: prototype
+strictProperties: true
+type:
+- object
+definitions:
+  id:
+    description: unique identifier of monthly_billing
+    readOnly: true
+    type:
+    - integer
+  user_id:
+    description: unique user id of Epsilon
+    readOnly: true
+    type:
+    - string
+  item_code:
+    description: item code
+    readOnly: true
+    type:
+    - string
+  item_name:
+    description: item name
+    readOnly: true
+    type:
+    - string
+  item_price:
+    description: item price
+    readOnly: true
+    type:
+    - integer
+  billing_type:
+    description: mission code of epsilon
+    readOnly: true
+    type:
+    - integer
+  status:
+    description: status
+    readOnly: true
+    type:
+    - string
+  registration_at:
+    description: regist_date
+    readOnly: true
+    type:
+    - datetime
+  canceled_at:
+    description: cancel_date
+    readOnly: true
+    type:
+    - datetime
+  created_at:
+    description: when monthly_billing was created
+    format: date-time
+    type:
+    - string
+  updated_at:
+    description: when monthly_billing was updated
+    format: date-time
+    type:
+    - string
+links:
+- description: List existing monthly_billings.
+  href: "/monthly_billings"
+  method: GET
+  rel: instances
+  title: List
+id: schemata/monthly_billing
