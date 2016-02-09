@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Yuta Kurotaki"]
   s.email       = ["yuta.kurotaki@gmail.com"]
   s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of EpsilonApi."
-  s.description = "TODO: Description of EpsilonApi."
+  s.summary     = "Epsilon API Server"
+  s.description = "Epsilon API Server"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
@@ -19,4 +19,5 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", "~> 4.2.5.1"
 
   s.add_development_dependency "sqlite3"
+  s.add_development_dependency "rspec"
 end
