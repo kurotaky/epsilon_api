@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = EpsilonApi::VERSION
   s.authors     = ["Yuta Kurotaki"]
   s.email       = ["yuta.kurotaki@gmail.com"]
-  s.homepage    = "TODO"
+  s.homepage    = "https://github.com/kurotaky/epsilon_api"
   s.summary     = "Epsilon API Server"
   s.description = "Epsilon API Server"
   s.license     = "MIT"
