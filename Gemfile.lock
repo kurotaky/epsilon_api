@@ -49,6 +49,7 @@ PATH
   remote: .
   specs:
     epsilon_api (0.0.1)
+      active_model_serializers
       rails
 
 GEM
