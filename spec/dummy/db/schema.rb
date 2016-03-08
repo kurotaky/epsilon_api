@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160209094442) do
+ActiveRecord::Schema.define(version: 20160308071819) do
+
+  create_table "epsilon_api_card_validities", force: :cascade do |t|
+    t.string   "user_id"
+    t.string   "user_name"
+    t.string   "email"
+    t.string   "user_status"
+    t.string   "card_status"
+    t.datetime "checked_at"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "epsilon_api_monthly_billings", force: :cascade do |t|
     t.string   "user_id"
