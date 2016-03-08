@@ -14,3 +14,8 @@ gemspec
 # gem 'byebug', group: [:development, :test]
 
 gem 'active_model_serializers'
+gem 'rails', '>= 5.0.0.beta3', '< 5.1'
+
+%w[rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support].each do |lib|
+  gem lib, github: "rspec/#{lib}", branch: 'master'
+end
