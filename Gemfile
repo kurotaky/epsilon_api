@@ -13,7 +13,7 @@ gemspec
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
 
-gem 'active_model_serializers', '~> 0.10.0.rc4'
+gem 'active_model_serializers'
 gem 'rails', '>= 5.0.0.beta3', '< 5.1'
 
 %w[rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support].each do |lib|

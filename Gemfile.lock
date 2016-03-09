@@ -173,7 +173,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  active_model_serializers (~> 0.10.0.rc4)
+  active_model_serializers
   epsilon_api!
   factory_girl_rails
   rails (>= 5.0.0.beta3, < 5.1)
