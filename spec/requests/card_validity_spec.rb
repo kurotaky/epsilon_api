@@ -1,13 +1,13 @@
 require 'rails_helper'
 
 RSpec.describe 'CardValidity', type: :request do
-  describe 'GET /card_validities' do
+  describe 'GET /card_validity' do
     before do
       FactoryGirl.create(:card_validity)
     end
 
-    it 'returns card validities' do
-      get '/epsilon_api/card_validities'
+    it 'returns card_validity' do
+      get '/epsilon_api/card_validity'
       expect(response).to have_http_status(:ok)
       card_validity = JSON.parse(response.body)[0]
 
